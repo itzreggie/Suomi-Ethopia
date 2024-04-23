@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".CompareFragment">
+
+    <ImageButton
+        android:id="@+id/exitbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:src="@drawable/baseline_close_24" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="All Data from 2022!" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/info_text"
+        android:layout_marginTop="29dp">
+
+
+        <TextView
+            android:id="@+id/population_b3"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/population_b2"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@+id/deaths_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/population_label"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@+id/immigration_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_a4"
+            android:layout_width="118dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/population_a3"
+            android:layout_alignStart="@id/city_a_population"
+            android:layout_marginTop="60dp"
+            android:layout_toLeftOf="@+id/deaths_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_a3"
+            android:layout_width="118dp"
+            android:layout_height="28dp"
+            android:layout_below="@id/population_label"
+            android:layout_alignStart="@id/city_a_population"
+            android:layout_marginTop="60dp"
+            android:layout_toLeftOf="@+id/population_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_c"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/population_b3"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/divorce_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_c3"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/population_c"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/emmmigration_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_d2"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/population_c3"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="55dp"
+            android:layout_toEndOf="@+id/Totalchange"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/city_a_population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="0dp"
+            android:text="City A"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city_b_population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            android:text="City B"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/population_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_a_population"
+            android:layout_centerHorizontal="true"
+            android:text="Population"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/immigration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/population_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Immigration\n  To Finland"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/deaths_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/immigration_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Deaths"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/divorce_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deaths_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Divorce"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emmmigration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divorce_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="  Emigration\nFrom Finland"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Totalchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emmmigration_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Total Change"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/population_a"
+            android:layout_width="118dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/population_a4"
+            android:layout_alignStart="@id/city_a_population"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/divorce_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_c2"
+            android:layout_width="118dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/population_a"
+            android:layout_alignStart="@id/city_a_population"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="60dp"
+            android:layout_toLeftOf="@+id/emmmigration_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_d"
+            android:layout_width="118dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/population_c2"
+            android:layout_alignStart="@id/city_a_population"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="60dp"
+            android:layout_toLeftOf="@+id/Totalchange"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city_a_population"
+            android:layout_alignStart="@id/city_a_population"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/population_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/population_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city_b_population"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/population_label"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

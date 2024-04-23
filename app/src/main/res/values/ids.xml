@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="settingsTitle" type="id" />
+    <item name="locationLabel" type="id" />
+    <item name="locationSpinner" type="id" />
+    <item name="languageLabel" type="id" />
+</resources>
